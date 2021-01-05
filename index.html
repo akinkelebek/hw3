@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src='scripts/scriptology.js' defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Homework3-Akin, Ece, Xinyi</title>
+</head>
+
+<body>
+    <header></header>
+    <main id="container">
+        <img src="https://64.media.tumblr.com/2cc422b7c92b2e06a4fdcb83d711e08a/tumblr_inline_p7okf6BRac1qm2lsy_400.png" alt="decor">
+        <h1><b>FizzBuzz Generator</b></h1>
+        <img src="https://64.media.tumblr.com/2cc422b7c92b2e06a4fdcb83d711e08a/tumblr_inline_p7okf6BRac1qm2lsy_400.png" alt="decor">
+        <div id="ValueLabel">
+            <h2>Starting Value: </h2><input id="StartV" name=field type="number"  min="1" max="99" onpaste="return false">
+            <h2>Ending Value: </h2><input id="EndV" name=field type="number" min="2" max="99" onpaste="return false">
+            <h2>Fizz value: </h2><input id="FizzV" type="number" value="3" readonly>
+            <h2>Buzz value: </h2><input id="BuzzV" type="number" value="5" readonly>
+        </div>
+
+        <div id="ColorLabel">
+            <h3>Fizz Color: </h3><input id="FizzC" type="color" value="#ff4500">
+            <h3>Buzz Color: </h3><input id="BuzzC" type="color" value="#6a5acd">
+            <h3>FizzBuzz Color: </h3><input id="FBC" type="color" value="#16982b">
+            <h3>Default Color: </h3><input id="DefaultC" type="color" value="#404040">
+        </div>
+        
+        <div id="Settings">
+            <div class="sliders">
+                <input type="range" min="30" max="80" value="80" placeholder="width" id="numWidth" name ="widthLabel">
+                    <div class="sliderLabel">
+                        <p> <b> Width : <span id="numWidthOutput"> </span> </b></p>
+                    </div>
+            </div>
+        </div>
+            <div class="sliders">
+                <input type="range" min="30" max="80" value="80" placeholder="height" id="numHeight" name="heightLabel">
+                    <div class="sliderLabel">
+                        <p> <b> Height : <span id="numHeightOutput"></span> </b></p>
+                    </div>
+            </div>
+
+        <div id="GenerateOrClear">
+            <button type="submit" id="Generate">Lux Fiat!</button><br>
+            <button type="submit" id="Clear">Clear all The Divs!</button><br>
+            <button type="submit" id="Create">Create custom Divs!</button><br>
+        </div>
+
+        <div id="subcontainer">
+
+        </div>
+
+    </main>
+<footer></footer>
+</body>
+</html>
